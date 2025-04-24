@@ -7,7 +7,7 @@ Este projeto é uma **spike técnica com fins didáticos**. Seu objetivo é expl
 
 O projeto visa auxiliar desenvolvedores na compreensão e implementação desse padrão, mostrando como utilizar modelos claros e organizados com a PynamoDB.
 
-**Site Documentação**: https://tuyoshivinicius.github.io/spike-single-table-design-concept-applied-with-pynamodb/
+📃 [SITE DOCUMENTAÇÃO](https://tuyoshivinicius.github.io/spike-single-table-design-concept-applied-with-pynamodb/)
 
 ---
 
@@ -146,7 +146,7 @@ Esses exemplos ajudam a visualizar claramente o funcionamento do padrão STD com
 
 ## Estrutura de Arquivos
 
-```
+```plain
 ├── run.py                     # Script principal de execução
 ├── requirements.txt           # Dependências do projeto
 └── src/
