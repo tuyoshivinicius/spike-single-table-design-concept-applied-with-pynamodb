@@ -2,15 +2,11 @@ name: Deploy MkDocs to GitHub Pages
 
 on:
   push:
-    branches: [main]
-
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+    branches:
+      - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,11 +24,11 @@ jobs:
       - name: Install Dependencies
         run: pip install -r mkdocs-requirements.txt
 
-      - name: Build MkDocs Site
-        run: mkdocs build
+      - name: Build and Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          mkdocs gh-deploy --force --remote-name origin --remote-branch gh-pages --message "Deploy from GitHub Actions"
