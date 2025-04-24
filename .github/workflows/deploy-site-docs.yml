@@ -16,9 +16,6 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Create docs directory if not exists
-        run: mkdir -p docs
-
       - name: Install Dependencies
         run: pip install -r mkdocs-requirements.txt
 

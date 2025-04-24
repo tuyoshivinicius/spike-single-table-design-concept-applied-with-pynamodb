@@ -1,6 +1,8 @@
 # Nome do site
 site_name: Spike Single Table Design com PynamoDB
 
+docs_dir: .
+
 # Descrição do site (aparece nos metadados)
 site_description: Documentação do projeto Spike Single Table Design com PynamoDB
 
