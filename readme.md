@@ -147,14 +147,14 @@ Esses exemplos ajudam a visualizar claramente o funcionamento do padrão STD com
 ## Estrutura de Arquivos
 
 ```plain
-├── run.py                     # Script principal de execução
-├── requirements.txt           # Dependências do projeto
+├── run.py                     // Script principal de execução
+├── requirements.txt           // Dependências do projeto
 └── src/
-    ├── app.py                 # Lógica principal (execução e simulação)
+    ├── app.py                 // Lógica principal (execução e simulação)
     └── models/
-        ├── base_model.py      # Modelo base compartilhado
-        ├── user_model.py      # Modelo de usuário
-        └── order_model.py     # Modelo de pedido
+        ├── base_model.py      // Modelo base compartilhado
+        ├── user_model.py      // Modelo de usuário
+        └── order_model.py     // Modelo de pedido
 ```
 ---
 
