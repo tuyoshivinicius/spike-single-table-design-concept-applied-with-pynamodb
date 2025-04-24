@@ -7,6 +7,8 @@ Este projeto é uma **spike técnica com fins didáticos**. Seu objetivo é expl
 
 O projeto visa auxiliar desenvolvedores na compreensão e implementação desse padrão, mostrando como utilizar modelos claros e organizados com a PynamoDB.
 
+**Site Documentação**: https://tuyoshivinicius.github.io/spike-single-table-design-concept-applied-with-pynamodb/
+
 ---
 
 ## O que é Single Table Design?
