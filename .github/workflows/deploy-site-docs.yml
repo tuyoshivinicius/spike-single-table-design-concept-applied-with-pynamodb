@@ -16,6 +16,11 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Create Docs Directory and Copy Index
+        run: |
+          mkdir -p docs
+          cp readme.md docs/index.md
+
       - name: Install Dependencies
         run: pip install -r mkdocs-requirements.txt
 

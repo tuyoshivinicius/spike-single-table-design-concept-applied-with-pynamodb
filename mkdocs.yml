@@ -1,8 +1,6 @@
 # Nome do site
 site_name: Spike Single Table Design com PynamoDB
 
-docs_dir: .
-
 # Descrição do site (aparece nos metadados)
 site_description: Documentação do projeto Spike Single Table Design com PynamoDB
 
@@ -42,7 +40,7 @@ extra_javascript:
 
 # Configuração de navegação
 nav:
-  - 🏠 Home: readme.md
+  - 🏠 Home: index.md
 
 # Configuração de Markdown
 markdown_extensions:
